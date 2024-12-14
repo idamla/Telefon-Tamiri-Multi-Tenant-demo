@@ -15,7 +15,7 @@
     <meta property="og:title" content="Uygun Fiyatlarla Akıllı Cihaz Tamir Hizmeti Sizlerle">
     <meta property="og:description" content=" Hızlı ve güvenilir tamir için hemen ulaşın.">
     <meta property="og:url" content="https://telefon-tamiri-seng209-211.com.tr/">
-    <link rel="stylesheet" href="talepSorgula2.css">
+    <link rel="stylesheet" href="hakkımızda2.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <!-- URL LİNKİNİ DAHA GÜZEL BİR ŞEY YAP PLS-->
@@ -41,8 +41,6 @@
                         Ürünler</a></li>
                 <li><a href="https://telefon-tamiri-seng209-211.com.tr/hakkımızda">Hakkımızda</a></li>
                 <li><a href="https://telefon-tamiri-seng209-211.com.tr/sikca-sorulan-sorular">SSS</a></li>
-
-
             </ul>
         </nav>
 
@@ -52,15 +50,27 @@
         </div>
     </header>
 
-    <!--ŞİMDİ ŞÖYLE BİR SORUN VAR SORGULAMA NO YAZACAĞIM YERE TIKLAMAMA İZİN VERMİYO NORMALDE BUNU HTML VE CSS KODLARI İLE YAPABİLMEM LAZIM AMA OLMADI JS KODLARIYLA OLUR MU BİLEMİYORUM SORUNU ÇÖZEMEDİM DAHA -->
 
-    <div class="header">
-        <div class="container">
-            <h1>TALEP SORGULA</h1>
-            <div class="search-box">
-                <input type="text" placeholder="Talep numaranızı giriniz!">
-                <button>SORGULA</button>
+    <div class="container">
+        <h1>MÜŞTERİ YORUMLARI</h1>
+        <div class="reviews-box">
+            <div class="arrow" id="prev">&#9664;</div>
+            <div class="comments" id="comments">
+                <div class="comment">
+                    <strong>Müşteri Adı Soyadı</strong>
+                    <p>İşinde çok başarılı bir yer herkese tavsiye ederim kesinlikle. Her konuda kısa bir sürede yardımcı oluyorlar çalışanları da çok kibar ve güler yüzlü. Kısaca İşinde en iyisi diyebilirim :))</p>
+                </div>
+                <div class="response">
+                    <strong>İşletme Sahibi</strong>
+                    <p>Bu güzel yorumunuz için biz teşekkür ederiz.</p>
+                </div>
             </div>
+            <div class="arrow" id="next">&#9654;</div>
+        </div>
+        <div class="form-container">
+            <input type="text" id="name" placeholder="Adınız Soyadınız">
+            <textarea id="comment" rows="5" placeholder="Yorumunuzu yazınız"></textarea>
+            <button id="submitComment">GÖNDER</button>
         </div>
     </div>
 

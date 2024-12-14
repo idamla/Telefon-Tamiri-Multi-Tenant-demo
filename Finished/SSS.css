@@ -122,9 +122,9 @@ header .auth-buttons a {
 }
 
 header .auth-buttons a:hover {
-  background-color: #f27A1A;
-  color: white;
-  border-color: white;
+  background-color: #f6c90e;
+  color: black;
+  border-color: black;
 }
 
 

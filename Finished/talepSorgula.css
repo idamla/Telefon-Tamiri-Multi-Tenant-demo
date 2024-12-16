@@ -279,45 +279,7 @@ table td:first-child {
   /* İlk sütunun genişliği ayarlandı */
 }
 
-.message-container {
-  margin-top: 40px;
-}
 
-.message-container:hover{      /*Mesajınız yazının boyut değiştirme sebebi */
-  font-size:1.5rem;
-}
-
-.message-container h2 {
-  margin-bottom: 15px;
-  color: white;
-  /* Başlık yazı rengi beyaz yapıldı */
-}
-
-textarea {
-  width: calc(100% - 20px);
-  /* Sağ ve soldan içe çekme eklendi */
-  height: 100px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: none;
-
-}
-
-button {
-  background-color: #ffc107;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: black;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-top:10px;
-}
-
-button:hover {
-  background-color: #e0a800;
-}
 
 /* Footer */
 footer {

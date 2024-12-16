@@ -175,7 +175,7 @@ header .auth-buttons a:hover {
     border: 2px solid white;
     background-color: transparent;
     color: white;
-    border-radius: 25px;
+    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
     margin-top: 30px;

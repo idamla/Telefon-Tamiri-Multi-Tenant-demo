@@ -128,132 +128,69 @@ header .auth-buttons a:hover {
 }
 
 
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top:1700px;
+}
+
+/* Form Gruplarının Düzenlenmesi */
+.form-group {
     display: flex;
+    align-items: center; /* Etiket ve input'ları hizalamak için */
+    margin-bottom: 15px;
 }
 
-.menu li {
-    margin-left: 20px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
+.form-group label {
+    width: 30%; /* Etiketin genişliği */
     font-weight: bold;
+    margin-right: 20px; /* Etiket ile kutu arasına boşluk ekliyoruz */
+    text-align: left; /* Etiketin soldan hizalanması */
 }
 
-.logo img {
-    height: 40px;
-}
-
-/* ANA BAŞLIK */
-.section-title {
-    text-align: center;
-    background-color: #000;
-    color: black;
-    padding: 10px;
-    font-size: 1.5rem;
-}
-
-/* ARAMA ALANI */
-.search-bar {
-    text-align: center;
-    margin: 20px 0;
-    margin-top: 40px;
-    height:10%;
-    width:50%;
-    margin-left:10%;
-
-}
-
-.search-container {
-    display: inline-block;
-    background: black;
-    padding: 10px;
-    border-radius: 5px;
-    color: black;
-    height:60px;
-    width:700px;
-    margin-left:12%;
-    
-}
-
-.search-container input {
-    padding: 5px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    color: #222;
-    width: 600px; /* Kutuların genişliği */
-    height: 40px; /* Kutuların yüksekliği */
-}
-
-
-
-.search-btn {
-    background-color: #ffcc00;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.search-btn:hover {
-    background-color: #e6b800;
-}
-
-/* TABLO */
-.table-container {
-    width: 90%;
-    margin: 0 auto;
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-th,
-td {
-    border: 1px solid #ddd;
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex-grow: 1; /* Geriye kalan alana yayılmasını sağlar */
     padding: 8px;
-    text-align: center;
-    color: black;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+    width: 100%; /* Kutuların genişliği etiketle uyumlu olacak */
 }
 
-th {
-    background-color: #f4f4f4;
-    color: #333;
+/* Textarea'yı daha uyumlu hale getirmek */
+textarea {
+    resize: vertical; /* Yalnızca dikey olarak yeniden boyutlandırma */
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+/* Butonları hizalamak ve düzenlemek */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Butonlar arasında boşluk ekliyoruz */
+    margin-top: 20px;
 }
 
-/* SAYFALAMA */
-.pagination {
-    text-align: center;
-    margin: 20px 0;
+.buttons button {
+    background-color: #f0b90b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
 }
 
-.pagination a,
-.pagination span {
-    margin: 0 5px;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+.buttons button:hover {
+    background-color: #e0a500;
 }
 
-.pagination a:hover {
-    color: #e6b800;
-}
 
 
 

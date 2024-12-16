@@ -128,82 +128,76 @@ header .auth-buttons a:hover {
 }
 
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.form {
-    background: #1e1e1e;
+/* Ana İçerik Alanı */
+.hakkimizda-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #000;
+    color: #fff;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top:200px;
 }
 
-.form input {
-    width: calc(100% - 20px);
-    padding: 10px;
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Alanı */
+.form-container {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
     margin-bottom: 15px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    outline: none;
-    color:black;
 }
 
-.form label {
+label {
     display: block;
+    font-weight: bold;
     margin-bottom: 5px;
-    text-align: left;
-    font-size:1.6rem;
+    font-size: 1.5rem;
 }
 
-.form .checkbox {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.form .checkbox input {
-    margin-right: 10px;
-}
-
-.form button {
-    background-color: #ffc107;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: black;
-    cursor: pointer;
-    border-radius: 4px;
+textarea {
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.3rem;
 }
 
-.form button:hover {
+input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+.ekle-btn {
+    background-color: #ffcc00;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top:15px;
+}
+
+.ekle-btn:hover {
     background-color: #e0a800;
 }
 
-.form a {
-    display: block;
-    margin-top: 10px;
-    color: #ffc107;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.form a:hover {
-    text-decoration: underline;
-}
 
 /* Footer */
 footer {

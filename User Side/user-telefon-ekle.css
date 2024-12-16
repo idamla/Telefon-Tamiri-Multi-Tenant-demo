@@ -20,6 +20,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
     /* Header altına hafif bir gölge */
+    margin-bottom: 10px;
 }
 
 /* Header Container */
@@ -122,88 +123,194 @@ header .auth-buttons a {
 }
 
 header .auth-buttons a:hover {
-    background-color: #f6c90e;
-    color: black;
-    border-color: black;
+    background-color: #f27A1A;
+    color: white;
+    border-color: white;
 }
 
 
-.container {
+/* Siyah arkaplan bölümü */
+.black-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: column; /* Elemanları dikey hizala */
+    align-items: center; /* Yatayda ortala */
+    justify-content: center; /* Dikeyde ortala */
+    height: 50vh; /* Sayfanın tamamını kapla */
+    background-color: #000; /* Arkaplanı siyah yap */
+
+}
+
+/* Input ve buton grubunu merkezleme */
+.input-group {
+    display: flex;
+    gap: 10px; /* Elemanlar arası boşluk */
+}
+
+/* Input kutuları */
+input[type="text"] {
+    width: 400px; /* Kutuların genişliği */
+    height: 50px; /* Kutuların yüksekliği */
+    font-size: 18px; /* İçindeki yazı büyüklüğü */
+    padding: 10px;
+    margin: 10px; /* Kutular arası boşluk */
+    border: 2px solid #555; /* Sarı çerçeve */
+    border-radius: 5px; /* Köşeleri yuvarlaklaştır */
+    color: #222; /* Yazı rengi */
+    background-color: #fff; /* Kutuların arkaplanı */
+
+}
+
+input[type="text"]::placeholder {
+    color: #888; /* Placeholder için gri ton */
+}
+
+/* Butonlar */
+.btn {
+    width: 120px; /* Buton genişliği */
+    height: 50px; /* Buton yüksekliği */
+    font-size: 18px; /* Buton yazı büyüklüğü */
+    color: #000; /* Yazı rengi */
+    background-color: #ffc107; /* Arkaplan rengi sarı */
+    border: none;
+    border-radius: 5px; /* Köşeleri yuvarlaklaştır */
+    margin: 10px; /* Boşluk */
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Hover efekti için geçiş */
+
+}
+
+.btn:hover {
+    background-color: #e0a800; /* Daha koyu sarı */
+    color:black;
+    transform: scale(1.1); /* Hafifçe büyüt */
+}
+
+/* Genel yazı büyüklüğü */
+label {
+    font-size: 20px;
+    color: #fff; /* Beyaz yazı */
+    margin-bottom: 10px;
+    display: block;
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
 
-.form {
-    background: #1e1e1e;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 400px;
-}
-
-.form input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    outline: none;
-    color:black;
-}
-
-.form label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-    font-size:1.6rem;
-}
-
-.form .checkbox {
+.menu {
+    background-color: black;
+    padding: 10px 0;
     display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
-.form .checkbox input {
-    margin-right: 10px;
-}
-
-.form button {
-    background-color: #ffc107;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: black;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.form button:hover {
-    background-color: #e0a800;
-}
-
-.form a {
-    display: block;
-    margin-top: 10px;
-    color: #ffc107;
+.menu a {
+    color: white;
     text-decoration: none;
     font-size: 14px;
 }
 
-.form a:hover {
-    text-decoration: underline;
+.container {
+    max-width: 95%;
+    margin: 10px auto ;
+    /* Üstte boşluk artırıldı */
+    background:#333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+table button {
+    width: 70px; /* Sabit genişlik */
+    height: 40px; /* Sabit yükseklik */
+    padding: 0; /* İç boşlukları sıfırla */
+    font-size: 14px; /* Yazı boyutu */
+
+    padding: 5px 10px; /* Daha küçük padding */
+    font-size: 14px; /* Yazı boyutunu küçült */
+    line-height: 1; /* Dikey hizalamayı düzelt */
+    background-color: #ffc107;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 2px;
+    
+}
+
+table button:hover {
+    background-color: #e0a800;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.table-container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    color: black;
+    /* Tablo içindeki yazılar siyah yapıldı */
+    font-size: 1.5rem;
+    height:50px;
+    text-align: center; /* İçerikleri ortalar */
+    vertical-align: middle; /* Dikey ortalama sağlar */
+}
+
+table td:first-child {
+    width: 40%;
+    /* İlk sütunun genişliği ayarlandı */
+}
+
+
+/* Sayfalama */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    margin-top: 100px;
+}
+
+.pagination a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f27A1A;
+    color: #fff;
+}
+
+
 
 /* Footer */
 footer {
